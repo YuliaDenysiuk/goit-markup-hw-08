@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  min-width: 200px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--dark-bg-text-color);
+  background-color: var(--accent-color);
+  border: var(--accent-color);
+}
+
+.button--active {
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-color);
+  }
+}
+
+.button__icon {
+  margin-left: 10px;
+  vertical-align: middle;
+
+  fill: var(--dark-bg-text-color);
+}
