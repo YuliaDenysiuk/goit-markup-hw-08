@@ -7,6 +7,10 @@
 }
 
 .address__item {
-  margin-top: 9px;
+  margin-top: 8px;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
 }

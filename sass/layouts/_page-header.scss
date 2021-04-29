@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -10,8 +12,17 @@
 .page-header__container {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .page-header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }

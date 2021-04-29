@@ -12,14 +12,14 @@
         <div class="container page-header__container">
             <nav class="site-nav">
                 <a href="./" class="logo page-header__logo" lang="en">Web<span class="logo__part logo__part--light-bg">Studio</span></a>
-                <ul class="list site-nav__list">
+                <ul class="list site-nav__list site-nav__list--hidden">
                     <li class="site-nav__item"><a href="./index.html" class="link site-nav__link">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link site-nav__link--current">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
     
-            <ul class="list contacts-list">
+            <ul class="list contacts-list contacts-list--hidden">
                 <li class="contacts-list__item"><a href="mailto:info@devstudio.com" class="link contacts-list__link">
                     <svg class="contacts-list__icon" width="16" height="12">
                         <use href="./images/studio/icons.svg#icon-envelope"></use>
@@ -33,6 +33,43 @@
                     +38 096 111 11 11</a>
                 </li>
             </ul>
+
+            <button class="menu-button" type="button" aria-expanded="fasle" aria-controls="mobile-menu" data-menu-button>
+                <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="menu-button__icon-menu" href="./images/studio/icons.svg#icon-menu"></use>
+                    <use class="menu-button__icon-menu-close" href="./images/studio/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+                <ul class="list site-nav__list site-nav__list--mobile">
+                    <li class="site-nav__item site-nav__item--mobile"><a href="./index.html" class="link site-nav__link">Студия</a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--mobile"><a href="./portfolio.html"
+                            class="link site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item site-nav__item--mobile"><a href="" class="link site-nav__link">Контакты</a></li>
+                </ul>
+                <div>
+                    <ul class="list contacts-list contacts-list--mobile">
+                        <li class="contacts-list__item contacts-list__item--mobile">
+                            <a href="tel:+380961111111" class="link contacts-list__link">+38 096 111 11 11</a>
+                        </li>
+                        <li class="contacts-list__item contacts-list__item--mobile">
+                            <a href="mailto:info@devstudio.com" class="link contacts-list__link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="list mobile-menu-socials-list">
+                        <li class="mobile-menu-socials-list__item"><a href="" class="link" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li class="mobile-menu-socials-list__item"><a href="" class="link" target="_blank"
+                                rel="noopener noreferrer">Twitter</a></li>
+                        <li class="mobile-menu-socials-list__item"><a href="" class="link" target="_blank"
+                                rel="noopener noreferrer">Facebook</a></li>
+                        <li class="mobile-menu-socials-list__item"><a href="" class="link" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -73,9 +110,9 @@
                                         платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
                             </div>
-                            <div class="portfolio-card__text">
+                            <div class="portfolio-card__text">                                
                                 <h2 class="portfolio-card__label">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                                <p>Дизайн</p>
+                                <p>Дизайн</p>                                
                             </div>
                         </a>
                     </li>
@@ -262,5 +299,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
