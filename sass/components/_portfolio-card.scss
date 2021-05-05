@@ -14,7 +14,10 @@
 }
 
 .portfolio-card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
 
   transition: box-shadow var(--animation);
 
@@ -25,6 +28,8 @@
 }
 
 .portfolio-card__text {
+  flex-grow: 1;
+
   padding: 20px 24px;
   border: 1px solid var(--border-color);
 }
