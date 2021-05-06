@@ -72,4 +72,9 @@
   .portfolio-card__link:focus & {
     transform: translateY(0);
   }
+
+  @media screen and (max-width: 349px) {
+    align-items: flex-start;
+    overflow: scroll;
+  }
 }
