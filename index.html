@@ -529,17 +529,17 @@
                     <label class="modal-form__label" for="comment">Комментарий</label>
                     <textarea class="modal-form__input modal-form__textarea-input" name="comment" id="comment" cols="30" rows="6" placeholder="Введите текст"></textarea>
                 </div>
-                <label class="checkbox" for="confirm">                  
+                <div class="checkbox" >                  
                     <div class="checkbox__thumb"> 
                         <input class="checkbox__input" type="checkbox" name="confirm" id="confirm" required>
                         <svg class="checkbox__icon" width="16" height="15">
                             <use href="./images/studio/icons.svg#icon-check"></use>
                         </svg>
-                        <span class="checkbox__label">Cоглашаюсь с рассылкой и принимаю
+                        <label class="checkbox__label" for="confirm">Cоглашаюсь с рассылкой и принимаю
                             <a href="" class="link checkbox__link">Условия договора</a>
-                        </span>
+                        </label>
                     </div>
-                </label>
+                </div>
                 <button class="button button--active" type="submit">Отправить</button>
             </form>
             <button class="modal__button-close" data-modal-close>

@@ -1042,6 +1042,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  pointer-events: none;
   border-radius: 2px;
   transition: background-color var(--animation);
 }
